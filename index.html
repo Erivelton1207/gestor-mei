@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Gestor Financeiro MEI - Dashboard de Vendas e Estoque</title>
+    
+    <!-- PWA manifest & Icon configurations -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- iOS native app behaviors -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Gestor MEI" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+
+    <!-- Google Fonts Inter & Space Grotesk dynamically loaded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;450;550;700;900&amp;family=Space+Grotesk:wght@500;700&amp;family=Fira+Code:wght@400;600&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#090d16] select-none text-slate-100 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => {
+              console.log('PWA Service Worker registrado com sucesso:', reg.scope);
+            })
+            .catch(err => {
+              console.warn('Falha ao registrar PWA Service Worker:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

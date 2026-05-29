@@ -1,0 +1,6 @@
+{
+  "name": "Gestor Financeiro MEI",
+  "description": "Aplicativo de gestão financeira simplificada para microempreendedores individuais de comunidade e comércio local, com fluxo de caixa e controle de vendas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

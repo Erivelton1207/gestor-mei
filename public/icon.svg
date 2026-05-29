@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="indigo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="128" fill="url(#bg-grad)" />
+  
+  <!-- Outer Glow or Border outline -->
+  <rect x="12" y="12" width="488" height="488" rx="116" fill="none" stroke="#1e293b" stroke-width="8" opacity="0.5" />
+  
+  <!-- Trend chart background line -->
+  <path d="M100 380 L180 300 L260 340 L400 200" fill="none" stroke="url(#indigo-grad)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
+  
+  <!-- Wallet Body -->
+  <rect x="130" y="240" width="252" height="170" rx="30" fill="url(#emerald-grad)" />
+  
+  <!-- Wallet Flap with buckle -->
+  <rect x="230" y="220" width="160" height="90" rx="15" fill="#10b981" />
+  <circle cx="340" cy="265" r="14" fill="#047857" />
+  <circle cx="340" cy="265" r="6" fill="#facc15" />
+  
+  <!-- Emerging Coins/Bills details -->
+  <rect x="170" y="190" width="80" height="60" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="4" transform="rotate(-15, 170, 190)" />
+  <rect x="260" y="170" width="80" height="60" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="4" transform="rotate(10, 260, 170)" />
+  
+  <!-- Dollar Symbol on the notes -->
+  <text x="195" y="225" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#34d399" transform="rotate(-15, 170, 190)">$</text>
+  <text x="295" y="205" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#34d399" transform="rotate(10, 260, 170)">$</text>
+  
+  <!-- Elegant Title / Accents -->
+  <circle cx="256" cy="450" r="8" fill="#34d399" opacity="0.6" />
+  <circle cx="236" cy="450" r="4" fill="#34d399" opacity="0.3" />
+  <circle cx="276" cy="450" r="4" fill="#34d399" opacity="0.3" />
+</svg>
